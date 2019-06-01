@@ -1559,8 +1559,8 @@ span.blndr_postediticon:after
 {
    font-size: 14px;
    color: #141414;
-   margin: 5px 0 5px -15px;
-   padding: 28px;
+   margin: 0px 5px;
+   padding: 35px;
    float: left;
 }
 
