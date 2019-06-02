@@ -612,8 +612,11 @@ ul.blndr_hmenu{
 }
 /* end menu bar */
 .blndr_nav-outer{
-   position:absolute;
-   width:98%;
+   position: absolute;
+   width: 33%;
+   background-color: rgba(23, 22, 22, 0.65);
+   border: none;
+   margin-top: 10px;
 }
 .blndr_nav-wrapper 
 {
