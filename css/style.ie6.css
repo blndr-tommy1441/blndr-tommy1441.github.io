@@ -40,12 +40,12 @@ body {
    z-index:-1;
    top: 0;
    width:100%;
-   height: 225px;
+   height: 260px;
    background-image: url('images/header.jpg');
    background-repeat: no-repeat;
-   background-position: center center;
+   background-position: center left;
 }
-div.blndr_header-wrapper{
+div.blndr_header{
    width:expression(calcWidth(this));
 }  
 /* end Header */
@@ -74,7 +74,7 @@ ul.blndr_hmenu, ul.blndr_hmenu ul, ul.blndr_hmenu li, ul.blndr_hmenu a {
 .blndr_nav
 {
    zoom: 1;
-   height: 47px;
+   height: 27px;
    background:#363636;
    width:expression(calcWidth(this));
 }
@@ -85,16 +85,16 @@ ul.blndr_hmenu, ul.blndr_hmenu ul, ul.blndr_hmenu li, ul.blndr_hmenu a {
 .blndr_hmenu a 
 {
    display:inline-block;
-   color: #1C1C1C;
-   background-color:#5EBAD9;
-   padding: 0 28px;
-   line-height: 35px;
+   color: #A8A8A8;
+   padding: 0 12px;
+   line-height: 27px;
    text-align: center;
 }
 
 .blndr_hmenu a.active 
 {
-   color: {ActiveTextColor};
+   color: #D0EAF6;
+   background-color:#277194;
 }
 
 .blndr_hmenu a:hover, .blndr_hmenuhoverA,  .blndr_hmenuhover a 
@@ -107,7 +107,7 @@ ul.blndr_hmenu, ul.blndr_hmenu ul, ul.blndr_hmenu li, ul.blndr_hmenu a {
 
 /* begin MenuSeparator */
 ul.blndr_hmenu li {
-   margin-left:expression(this.previousSibling==null?'0':'9px');
+   margin-left:expression(this.previousSibling==null?'0':'1px');
 }
 ul.blndr_hmenu li li{
    margin-left:0;
@@ -118,9 +118,9 @@ span.blndr_hmenu-separator
    position:absolute;
    display: block;
    top:0;
-   left:  -9px;
-   width: 9px;
-   height: 35px;
+   left:  -1px;
+   width: 1px;
+   height: 27px;
    background: url('images/menuseparator.png') center center no-repeat;
 }
 /* end MenuSeparator */
@@ -141,6 +141,21 @@ span.blndr_hmenu-separator
 }
 
 /* end MenuSubItem */
+
+/* begin TextBlock */
+div.blndr_textblock
+{
+   font-size: 1px;
+   background: none;
+   behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+artGetStyleUrl()+"images/textblock-bg.png',sizingMethod='scale')");
+}
+/* end TextBlock */
+
+/* begin HeaderObject */
+div.blndr_headerobject{
+   font-size: 1px;
+}
+/* end HeaderObject */
 
 /* begin Box, Sheet */
 .blndr_sheet {
@@ -198,32 +213,32 @@ ul.blndr_vmenu, ul.blndr_vmenu ul, ul.blndr_vmenu li, ul.blndr_vmenu a
 
 ul.blndr_vmenu li {
    z-index:0;
-   margin-top:expression(this.previousSibling==null?'0':'4px');
+   margin-top:expression(this.previousSibling==null?'0':'2px');
 }
 ul.blndr_vmenu ul{
-   margin-top:4px;
+   margin-top:2px;
    padding-bottom: 0;
 }
 
 ul.blndr_vmenu a 
 {
-   color: #B5B5B5;
-   background-color:#262626;
-   padding: 0 12px 0 12px;
-   height: 32px;
-   line-height: 32px;
+   color: #545454;
+   background-color:#F5F5F5;
+   padding: 0 10px 0 18px;
+   height: 30px;
+   line-height: 30px;
 }
 
 .blndr_vmenu a.active 
 {
-   color: #104056;
-   background-color:#3AA7D9;
+   color: #1B698D;
+   background-color:#F5F5F5;
 }
 
 ul.blndr_vmenu a:hover
 {
-   color: #87CCE3;
-   background-color:#3AA7D9;
+   color: #1C6178;
+   background-color:#CDE4EC;
 }
 
 /* end VMenuItem */
@@ -234,14 +249,14 @@ ul.blndr_vmenu ul a {
 }
 ul.blndr_vmenu li li {
    padding-top:expression(this.previousSibling==null?'0':'0');
-   margin-top:expression(this.previousSibling==null?'0':'2px');
+   margin-top:expression(this.previousSibling==null?'0':'0');
 }
  
 ul.blndr_vmenu ul ul {
-   margin-top:2px;
+   margin-top:0;
 }
 ul.blndr_vmenu ul a.active {
-   color: #14506B !important;
+   color: #1B698D !important;
 }
 ul.blndr_vmenu ul a:hover {
    color: #134353 !important;
@@ -250,13 +265,13 @@ ul.blndr_vmenu ul a:hover {
 
 /* begin Box, Block */
 .blndr_block {
-   background:#F3F3F3;
+   background:#FFFFFF;
 }
 /* end Box, Block */
 
 /* begin Box, BlockContent */
 .blndr_blockcontent {
-   background:#F3F3F3;
+   background:#FFFFFF;
 }
 .blndr_blockcontent-body ul li{
    height: 1%;
@@ -308,10 +323,6 @@ ul.blndr_vmenu ul a:hover {
 /* begin LayoutCell, content */
 .blndr_sidebar1 {
    width: auto;
-   background:#F3F3F3;
 }
 /* end LayoutCell, content */
-
-/* begin LayoutCell, sidebar1 */
-/* end LayoutCell, sidebar1 */
 

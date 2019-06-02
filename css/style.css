@@ -3,7 +3,7 @@
 
 #blndr_main, table
 {
-   font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, Sans-Serif;
+   font-family: "Century Gothic",Arial, Helvetica, Sans-Serif;
    font-style: normal;
    font-weight: normal;
    font-size: 14px;
@@ -34,10 +34,8 @@ ul.blndr_vmenu a
 .blndr_postcontent a:hover,
 .blndr_postcontent a.hovered
 {
-   font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, Sans-Serif;
-   outline: 0;
-   border:none;
-   -moz-outline-style: none;
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   text-align: center;
 }
 
 .blndr_postcontent p
@@ -57,7 +55,7 @@ ul.blndr_vmenu a
 .blndr_logo-text, .blndr_logo-text a, .blndr_logo-text a:link, .blndr_logo-text a:visited, .blndr_logo-text a:hover,
 .blndr_postheader, .blndr_postheader a, .blndr_postheader a:link, .blndr_postheader a:visited, .blndr_postheader a:hover
 {
-   font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, Sans-Serif;
+   font-family: "Century Gothic",Arial, Helvetica, Sans-Serif;
    font-style: normal;
    font-weight: bold;
    font-size: 29px;
@@ -66,12 +64,14 @@ ul.blndr_vmenu a
 
 .blndr_postcontent a
 {
+   font-family: "Century Gothic",Arial, Helvetica, Sans-Serif;
    text-decoration: none;
    color: #2D9ABE;
 }
 
 .blndr_postcontent a:link
 {
+   font-family: "Century Gothic",Arial, Helvetica, Sans-Serif;
    text-decoration: none;
    color: #2D9ABE;
 }
@@ -189,18 +189,41 @@ ul.blndr_vmenu a
 }
 
 
-/*this is just for the thumbnails*/
-.blndr_postcontent .thumbnail
+
+
+
+.blndr_postcontent table
 {
-   width: 200px;
-   border: #383838 5px solid;
+   margin-top: 15px;
+   margin-bottom: 15px;
+   margin-right: auto;
+   margin-left: auto;
+   width: 95%;
+   border: 0px;
+   border-collapse: collapse;
+
 }
 
-/*this is for the social media icons in the Contact me*/
-.blndr_postcontent .social
+.blndr_postcontent table tr
 {
-   width: 80px;
+   padding-top: 0px;
+   padding-right: 0px;
+   padding-bottom: 0px;
+   padding-left: 0px;
 }
+
+.blndr_postcontent table td
+{
+   text-align: center;
+}
+
+
+.blndr_postcontent table img
+{
+   height: 150px;;
+}
+
+
 
 
 
@@ -238,7 +261,7 @@ body
    min-width: 700px;
    color: #000000;
    background-color: #ABABAB;
-   background-image: url('images/supportImages/Bottom_texture.jpg');
+   background-image: url('../images/Bottom_texture.jpg');
    background-repeat: repeat;
    background-attachment: fixed;
    background-position: top left;
@@ -247,7 +270,7 @@ body
 #blndr_page-background-middle-texture
 {
    position: relative;
-   background-image: url('images/supportImages/Middle_texture.jpg');
+   background-image: url('../images/Middle_texture.jpg');
    background-repeat: repeat-x;
    background-position: top left;
    background-attachment: fixed;
@@ -393,12 +416,13 @@ li p, .blndr_postcontent li p, .blndr_blockcontent-body li p
 /* begin Header */
 div.blndr_header
 {
+   min-width: 700px;
+   max-width: 1920px;
    margin: 0 auto;
    position: relative;
-   z-index: -5;
    width:100%;
-   height: 225px;
-   margin-top: 0;
+   height: 260px;
+   margin-top: 2px;
    margin-bottom: 0;
 }
 .blndr_header-position
@@ -411,8 +435,6 @@ div.blndr_header
 
 .blndr_header-wrapper 
 {
-   min-width: 700px;
-   max-width: 1920px;
    position: relative;
    top:0;
    width:100%;
@@ -424,7 +446,7 @@ div.blndr_header
    margin: 0 1px;
 }
 
-.blndr_header:after
+.blndr_header-inner:after
 {
    position: absolute;
    z-index:-1;
@@ -432,70 +454,12 @@ div.blndr_header
    content:' ';
    top: 0;
    width:100%;
-   height: 225px;
-   background-image: url('images/supportImages/header.jpg');
+   height: 260px;
+   background-image: url('../images/header.jpg');
    background-repeat: no-repeat;
-   background-position: center center;
+   background-position: center left;
 }
 /* end Header */
-
-/* begin Logo */
-div.blndr_logo
-{
-   display: block;
-   position: absolute;
-   top: 12px;
-   left: 0;
-   margin-left: 12px;
-}
-
-.blndr_logo-name
-{
-   display: block;
-   text-align: left;
-   font-size: 33px;
-   padding: 0;
-   margin: 0;
-   color: #D4D4D4 !important;
-}
-.blndr_logo-name a, 
-.blndr_logo-name a:link, 
-.blndr_logo-name a:visited, 
-.blndr_logo-name a:hover
-{
-   font-size: 33px;
-   padding: 0;
-   margin: 0;
-   color: #D4D4D4 !important;
-}
-
-.blndr_logo-text
-{
-   display: block;
-   text-align: left;
-   font-size: 13px;
-   padding: 0;
-   margin: 0;
-   color: #D4D4D4 !important;
-}
-.blndr_logo-text a,
-.blndr_logo-text a:link,
-.blndr_logo-text a:visited,
-.blndr_logo-text a:hover
-{
-   font-size: 13px;
-   padding: 0;
-   margin: 0;
-   color: #D4D4D4 !important;
-}
-
-#headline, #slogan 
-{
-   display: block;
-   min-width: 150px;
-   text-align: left;
-}
-/* end Logo */
 
 /* begin Menu */
 /* menu structure */
@@ -564,7 +528,7 @@ ul.blndr_hmenu ul
    z-index: 10;
    left: 0;
    top: 0;
-   background-image: url('images/supportImages/spacer.gif');
+   background-image: url('../images/spacer.gif');
    padding: 10px 30px 30px 30px;
    margin: -10px 0 0 -30px;
 }
@@ -617,8 +581,8 @@ ul.blndr_hmenu li li:hover>ul.blndr_hmenu-right-to-left {
 
 ul.blndr_hmenu{
    position:relative;
-   padding: 6px 6px 6px 6px;
-   float: left;
+   padding: 0 5px 0 5px;
+   float: right;
 }
 
 /* end menu structure */
@@ -629,22 +593,22 @@ ul.blndr_hmenu{
 {
    min-width: 700px;
    max-width: 1920px;
-   width:100%;
    margin:0 auto;
-   min-height: 47px;
+   min-height: 27px;
    z-index: 100;
-   margin-top: 0;
-   margin-bottom: 0;
+   margin: 0 1px -27px;
+   width:auto;
+   top: 5px;
 }
 
 .blndr_nav:before, .blndr_nav:after{
-   background-image: url('images/supportImages/nav.png');
+   background-image: url('../images/nav.png');
 }
 .blndr_nav:before{
-   right: 6px;
+   right: 5px;
 }
 .blndr_nav:after{
-   width: 6px;
+   width: 5px;
 }
 /* end menu bar */
 .blndr_nav-outer{
@@ -654,8 +618,8 @@ ul.blndr_hmenu{
 .blndr_nav-wrapper 
 {
    position: relative;
-   width:100%;
    margin:0 auto;
+   width:auto;
 }
 
 .blndr_nav-inner{
@@ -669,12 +633,12 @@ ul.blndr_hmenu>li>a
 {
    position: relative;
    display: block;
-   height: 35px;
+   height: 27px;
    cursor: pointer;
    text-decoration: none;
-   color: #1C1C1C;
-   padding: 0 28px;
-   line-height: 35px;
+   color: #A8A8A8;
+   padding: 0 12px;
+   line-height: 27px;
    text-align: center;
 }
 
@@ -686,27 +650,39 @@ ul.blndr_hmenu>li>a:before, ul.blndr_hmenu>li>a:after
    top: 0;
    bottom:0;
    z-index: -1;
-   background-image: url('images/supportImages/menuitem.png');
+   background-image: url('../images/menuitem.png');
 }
 
 ul.blndr_hmenu>li>a:before
 {
    left: 0;
-   right: 11px;
+   right: 0;
    background-position: top left;
 }
 
 ul.blndr_hmenu>li>a:after
 {
-   width: 11px;
+   width: 0;
    right: 0;
    background-position: top right;
 }
 
 .blndr_hmenu a, .blndr_hmenu a:link, .blndr_hmenu a:visited, .blndr_hmenu a:hover
 {
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   font-size: 15px;
    text-align: left;
    text-decoration: none;
+}
+
+ul.blndr_hmenu>li>a.active:before {
+   background-position: bottom left;
+} 
+ul.blndr_hmenu>li>a.active:after {
+   background-position: bottom right;
+}
+ul.blndr_hmenu>li>a.active {
+   color: #D0EAF6;
 }
 
 ul.blndr_hmenu>li>a:hover:before, ul.blndr_hmenu>li:hover>a:before {
@@ -728,14 +704,14 @@ ul.blndr_hmenu>li:before
    display: block;
    content:' ';
    top:0;
-   left:  -9px;
-   width:9px;
-   height: 35px;
-   background: url('images/supportImages/menuseparator.png') center center no-repeat;
+   left:  -1px;
+   width:1px;
+   height: 27px;
+   background: url('../images/menuseparator.png') center center no-repeat;
 }
 
 ul.blndr_hmenu>li {
-   margin-left:9px;
+   margin-left:1px;
 }
 ul.blndr_hmenu>li:first-child {
    margin-left:0;
@@ -751,8 +727,8 @@ ul.blndr_hmenu>li:first-child:before{
 {
    display: block;
    white-space: nowrap;
-   height: 31px;
-   background-image: url('images/supportImages/subitem.png');
+   height: 25px;
+   background-image: url('../images/subitem.png');
    background-position: left top;
    background-repeat: repeat-x;
    border-width: 1px;
@@ -762,10 +738,12 @@ ul.blndr_hmenu>li:first-child:before{
    min-width: 7em;
    text-align: left;
    text-decoration: none;
-   line-height: 31px;
+   line-height: 25px;
    color: #303030;
+   font-family: "Century Gothic",Arial, Helvetica, Sans-Serif;
+   font-size: 13px;
    margin:0;
-   padding: 0 22px;
+   padding: 0 12px;
 }
 
 .blndr_hmenu ul>li:first-child>a
@@ -777,10 +755,12 @@ ul.blndr_hmenu>li:first-child:before{
 {
    text-align: left;
    text-decoration: none;
-   line-height: 31px;
+   line-height: 25px;
    color: #303030;
+   font-family: "Century Gothic",Arial, Helvetica, Sans-Serif;
+   font-size: 13px;
    margin:0;
-   padding: 0 22px;
+   padding: 0 12px;
 }
 
 .blndr_hmenu ul li a:hover
@@ -806,6 +786,94 @@ ul.blndr_hmenu>li:first-child:before{
 
 /* end MenuSubItem */
 
+/* begin TextBlock */
+div.blndr_textblock
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   margin-left: 0;
+   width: 250px;
+   height: 260px;
+   background-image: url('../images/textblock-bg.png');
+}
+/* end TextBlock */
+
+/* begin HeaderObject */
+div.blndr_headerobject
+{
+   display: block;
+   left: 75%;
+   margin-left: -214px;
+   position: absolute;
+   top: 0;
+   width: 366px;
+   height: 260px;
+   background-image: url('../images/header-object.png');
+}
+/* end HeaderObject */
+
+/* begin Logo */
+div.blndr_logo
+{
+   display: block;
+   position: absolute;
+   top: 101px;
+   right: 100%;
+   margin-right: -238px;
+   width: 238px;
+}
+
+.blndr_logo-name
+{
+   display: block;
+   text-align: right;
+   padding: 0;
+   margin: 0;
+   color: #CCCCCC !important;
+}
+.blndr_logo-name a, 
+.blndr_logo-name a:link, 
+.blndr_logo-name a:visited, 
+.blndr_logo-name a:hover
+{
+   padding: 0;
+   margin: 0;
+   color: #CCCCCC !important;
+}
+
+.blndr_logo-text
+{
+   display: block;
+   text-align: right;
+   font-style: italic;
+   font-weight: normal;
+   font-size: 13px;
+   padding: 0;
+   margin: 0;
+   color: #CCCCCC !important;
+}
+.blndr_logo-text a,
+.blndr_logo-text a:link,
+.blndr_logo-text a:visited,
+.blndr_logo-text a:hover
+{
+   font-style: italic;
+   font-weight: normal;
+   font-size: 13px;
+   padding: 0;
+   margin: 0;
+   color: #CCCCCC !important;
+}
+
+#headline, #slogan 
+{
+   display: block;
+   min-width: 150px;
+   text-align: right;
+}
+/* end Logo */
+
 /* begin Box, Sheet */
 .blndr_sheet
 {
@@ -821,14 +889,14 @@ ul.blndr_hmenu>li:first-child:before{
    padding:1px;
    min-width:10px;
    min-height:10px;
-   padding-top:0;
+   padding-top:1px;
    padding-bottom:5px;
 }
 .blndr_sheet:before, .blndr_sheet:after 
 {
-   content: url('images/supportImages/sheet_t.png');
+   content: url('../images/sheet_t.png');
    font-size: 0;
-   background-image: url('images/supportImages/sheet_b.png');
+   background-image: url('../images/sheet_b.png');
 }
 .blndr_sheet:after{
    clip:rect(auto, auto, auto, 1914px);
@@ -840,12 +908,12 @@ ul.blndr_hmenu>li:first-child:before{
    width: 6px;
    top:6px;
    bottom:6px;
-   background-image:url('images/supportImages/sheet.png');
+   background-image:url('../images/sheet.png');
 }
 .blndr_sheet-body:before{
    top:6px;
    bottom:6px;
-   background-image:url('images/supportImages/sheet.png');
+   background-image:url('../images/sheet.png');
 }
 
 /* end Box, Sheet */
@@ -883,7 +951,7 @@ span.blndr_button-wrapper>input.blndr_button,
 span.blndr_button-wrapper>button.blndr_button
 {
    text-decoration: none;
-   font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, Sans-Serif;
+   font-family: "Century Gothic",Arial, Helvetica, Sans-Serif;
    font-style: normal;
    font-weight: normal;
    font-size: 14px;
@@ -898,8 +966,8 @@ span.blndr_button-wrapper>button.blndr_button
    outline: none;
    border: none;
    background: none;
-   line-height: 33px;
-   height: 33px;
+   line-height: 32px;
+   height: 32px;
    margin: 0 !important;
    padding: 0 14px !important;
    overflow: visible;
@@ -918,7 +986,7 @@ span.blndr_button-wrapper
    vertical-align: middle;
    display: inline-block;
    position: relative;
-   height: 33px;
+   height: 32px;
    overflow: hidden;
    white-space: nowrap;
    text-indent: 0;
@@ -938,7 +1006,7 @@ span.blndr_button-wrapper
 input, select, textarea
 {
    vertical-align: middle;
-   font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, Sans-Serif;
+   font-family: "Century Gothic",Arial, Helvetica, Sans-Serif;
    font-style: normal;
    font-weight: normal;
    font-size: 14px;
@@ -968,7 +1036,7 @@ span.blndr_button-wrapper>span.blndr_button-l, span.blndr_button-wrapper>span.bl
    bottom: 0;
    margin: 0;
    padding: 0;
-   background-image: url('images/supportImages/button.png');
+   background-image: url('../images/button.png');
    background-repeat: no-repeat;
 }
 
@@ -1022,6 +1090,20 @@ span.blndr_button-wrapper input
 {
    padding:0;
 }
+.blndr_vmenublock:before,.blndr_vmenublock-body:before{
+   right:0;
+}
+.blndr_vmenublock-body:after{
+   width: 0;
+   top:0;
+   bottom:0;
+   background-image:url('../images/vmenublock.png');
+}
+.blndr_vmenublock-body:before{
+   top:0;
+   bottom:0;
+   background-image:url('../images/vmenublock.png');
+}
 
 /* end Box, Block, VMenuBlock */
 
@@ -1065,8 +1147,8 @@ ul.blndr_vmenu ul
    margin: 0;
    padding: 0;
    position:relative;
-   margin-left: 2px;
-   margin-right: 2px;
+   margin-left: 0;
+   margin-right: 0;
 }
 
 ul.blndr_vmenu ul.active
@@ -1082,7 +1164,7 @@ ul.blndr_vmenu a
    cursor: pointer;
    z-index:0;
    text-decoration: none;
-   font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, Sans-Serif;
+   font-family: "Century Gothic",Arial, Helvetica, Sans-Serif;
    font-style: normal;
    font-weight: normal;
    font-size: 13px;
@@ -1097,18 +1179,19 @@ ul.blndr_vmenu li{
 
 ul.blndr_vmenu>li>a 
 {
-   color: #B5B5B5;
-   padding: 0 12px 0 12px;
-   height: 32px;
-   line-height: 32px;
+   color: #545454;
+   padding: 0 10px 0 18px;
+   height: 30px;
+   line-height: 30px;
    white-space: nowrap;
 }
 
 ul.blndr_vmenu>li>a.active {
-   color: #104056;
+   color: #2693c5;
+   font-weight: bold;
 }
 ul.blndr_vmenu a:hover, ul.blndr_vmenu a.active:hover {
-   color: #87CCE3;
+   color: #1C6178;
 }
 
 ul.blndr_vmenu>li>a:before, ul.blndr_vmenu>li>a:after 
@@ -1117,18 +1200,18 @@ ul.blndr_vmenu>li>a:before, ul.blndr_vmenu>li>a:after
    display: block;
    content: ' ';
    z-index:-1;
-   background-image: url('images/supportImages/vmenuitem.png');
+   background-image: url('../images/vmenuitem.png');
    top:0;
-   height:32px;
+   height:30px;
 }
 
 ul.blndr_vmenu>li>a:before{
    left: 0;
-   right: 12px;
+   right: 13px;
    background-position: top left;
 }
 ul.blndr_vmenu>li>a:after{
-   width: 12px;
+   width: 13px;
    right: 0;
    background-position: top right;
 }
@@ -1149,10 +1232,10 @@ ul.blndr_vmenu>li>a:hover:after {
 }
 
 ul.blndr_vmenu>li{
-   margin-top:4px;
+   margin-top:2px;
 }
 ul.blndr_vmenu>li>ul{
-   margin-top:4px;
+   margin-top:2px;
    padding-bottom: 0;
 }
 ul.blndr_vmenu>li:first-child{
@@ -1175,15 +1258,15 @@ ul.blndr_vmenu ul a
    display: block;
    position:relative;
    white-space: nowrap;
-   height: 22px;
+   height: 24px;
    overflow: visible;
-   background-image: url('images/supportImages/vsubitem.png');
+   background-image: url('../images/vsubitem.png');
    background-repeat: repeat-x;
    background-position: top left;
    padding:0;
    padding-left:29px;
    padding-right:15px;
-   line-height: 22px;
+   line-height: 24px;
    color: #545454;
    margin-left: 0;
    margin-right: 0;
@@ -1194,7 +1277,7 @@ ul.blndr_vmenu ul a.active{
 }
 ul.blndr_vmenu ul a:hover{
    background-position: center left;
-   line-height: 22px;
+   line-height: 24px;
    color: #545454;
    margin-left: 0;
    margin-right: 0;
@@ -1207,12 +1290,12 @@ ul.blndr_vmenu ul a:after
 {
    display: block;
    position:absolute;
-   top:7px;
+   top:10px;
    content:' ';
    width: 4px;
-   height: 8px;
+   height: 4px;
    overflow: visible;
-   background-image: url('images/supportImages/vsubitemicon.png');
+   background-image: url('../images/vsubitemicon.png');
    background-position: top left;
    background-repeat: no-repeat;
    left:  15px;
@@ -1229,7 +1312,7 @@ ul.blndr_vmenu ul a.active:after{
 
 ul.blndr_vmenu ul a:link, ul.blndr_vmenu ul a:visited, ul.blndr_vmenu ul a:active
 {
-   line-height: 22px;
+   line-height: 24px;
    color: #545454;
    margin-left: 0;
    margin-right: 0;
@@ -1242,7 +1325,7 @@ ul.blndr_vmenu>li>ul>li:first-child{
  
 ul.blndr_vmenu li li{
    position:relative;
-   margin-top:2px;
+   margin-top:0;
 }
 
 ul.blndr_vmenu ul ul a:after{
@@ -1271,7 +1354,8 @@ ul.blndr_vmenu ul ul ul ul ul a{
 }
 
 ul.blndr_vmenu ul li a.active {
-   color: #14506B;
+   color: #2693c5;
+   font-weight: bold;
 }
 ul.blndr_vmenu ul li a:hover, ul.blndr_vmenu ul li a:hover.active {
    color: #134353;
@@ -1287,14 +1371,16 @@ ul.blndr_vmenu ul li a:hover, ul.blndr_vmenu ul li a:hover.active {
 }
 .blndr_block-body 
 {
-   padding:7px;
+   padding:3px;
 }
 
 div.blndr_block img
 {
    /* WARNING do NOT collapse this to 'border' - inheritance! */
-  border-width: 0;
-   margin: 10px;
+  border-width: 1px;
+   border-color: #69BCE2;
+   border-style: solid;
+   margin: 7px;
 }
 
 /* end Box, Block */
@@ -1307,8 +1393,8 @@ div.blndr_block img
 .blndr_blockcontent-body 
 {
    padding:0;
-   color: #134963;
-   font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, Sans-Serif;
+   color: #14506B;
+   font-family: "Century Gothic",Arial, Helvetica, Sans-Serif;
    font-size: 14px;
 }
 .blndr_blockcontent-body table,
@@ -1318,8 +1404,8 @@ div.blndr_block img
 .blndr_blockcontent-body a:visited,
 .blndr_blockcontent-body a:hover
 {
-   color: #134963;
-   font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, Sans-Serif;
+   color: #14506B;
+   font-family: "Century Gothic",Arial, Helvetica, Sans-Serif;
    font-size: 14px;
 }
 
@@ -1330,28 +1416,28 @@ div.blndr_block img
 
 .blndr_blockcontent-body a, .blndr_blockcontent-body a:link
 {
-   color: #206E88;
+   color: #227591;
    text-decoration: underline;
 }
 
 .blndr_blockcontent-body a:visited, .blndr_blockcontent-body a.visited
 {
-   color: #8C8C8C;
+   color: #949494;
    text-decoration: underline;
 }
 
 .blndr_blockcontent-body a:hover, .blndr_blockcontent-body a.hover
 {
-   color: #248CBC;
+   color: #2693C5;
 }
 
 .blndr_blockcontent-body ul li
 {
    line-height: 125%;
-   color: #0C3040;
+   color: #0D3345;
    margin: 5px 0 0 10px;
-   padding: 0 0 0 16px;
-   background-image: url('images/supportImages/blockcontentbullets.png');
+   padding: 0 0 0 12px;
+   background-image: url('../images/blockcontentbullets.png');
    background-repeat: no-repeat;
    background-position: top left;
 }
@@ -1376,9 +1462,9 @@ a img
 .blndr_article img, img.blndr_article, .blndr_block img, .blndr_footer img
 {
    border-color: #69BCE2;
-  /* border-style: solid;
-   border-width: 1px;*/
-   margin: 10px 10px 10px 10px;
+   border-style: solid;
+   border-width: 1px;
+   margin: 5px 5px 5px 5px;
 }
 
 .blndr_metadata-icons img
@@ -1485,7 +1571,7 @@ pre
 .blndr_postheadericons a:visited,
 .blndr_postheadericons a:hover
 {
-   font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, Sans-Serif;
+   font-family: "Century Gothic",Arial, Helvetica, Sans-Serif;
    color: #404040;
 }
 
@@ -1554,14 +1640,13 @@ span.blndr_postediticon:after
    padding: 0;
 }
 
-/*Here I'm controlling the LI of the Gallery */
 .blndr_postcontent li
 {
+   font-family: "Century Gothic",Arial, Helvetica, Sans-Serif;
    font-size: 14px;
    color: #141414;
-   margin: 0px 5px;
-   padding: 35px;
-   float: left;
+   margin: 5px 0 5px -15px;
+   padding: 0;
 }
 
 .blndr_postcontent li ol, .blndr_post li ul
@@ -1580,6 +1665,7 @@ blockquote a:visited, .blndr_postcontent blockquote a:visited, .blndr_blockconte
 blockquote a:hover, .blndr_postcontent blockquote a:hover, .blndr_blockcontent blockquote a:hover, .blndr_footer blockquote a:hover
 {
    color: #05131A;
+   font-family: "Century Gothic",Arial, Helvetica, Sans-Serif;
 }
 
 /* Override native 'p' margins*/
@@ -1599,7 +1685,7 @@ blockquote
    background-color: #DEDEDE;
    margin-left: 50px;
    padding-left: 38px;
-   background-image: url('images/supportImages/postquote.png');
+   background-image: url('../images/postquote.png');
    background-position: left top;
    background-repeat: no-repeat;
    /* makes block not to align behind the image if they are in the same line */
@@ -1616,7 +1702,7 @@ blockquote
 .blndr_postfootericons a:visited,
 .blndr_postfootericons a:hover
 {
-   font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, Sans-Serif;
+   font-family: "Century Gothic",Arial, Helvetica, Sans-Serif;
    color: #545454;
 }
 
@@ -1711,7 +1797,7 @@ span.blndr_postcommentsicon:after
    line-height: 125%;
    color: #9CD3EC;
    padding: 0 0 0 13px;
-   background-image: url('images/supportImages/footerbullets.png');
+   background-image: url('../images/footerbullets.png');
    background-repeat: no-repeat;
    background-position: top left;
 }
@@ -1725,7 +1811,7 @@ span.blndr_postcommentsicon:after
    right:0;
    top:0;
    bottom:50px;
-   background-image: url('images/supportImages/footer.png');
+   background-image: url('../images/footer.png');
    background-position:bottom left;
 }
 
@@ -1736,7 +1822,7 @@ span.blndr_postcommentsicon:after
    z-index:-2;
    bottom:0;
    height:50px;
-   background-image: url('images/supportImages/footer_b.png');
+   background-image: url('../images/footer_b.png');
 }
 
 .blndr_footer:before
@@ -1764,7 +1850,7 @@ span.blndr_postcommentsicon:after
 .blndr_rss-tag-icon
 {
    display: block;
-   background-image: url('images/supportImages/rssicon.png');
+   background-image: url('../images/rssicon.png');
    background-position: center right;
    background-repeat: no-repeat;
    height: 22px;
@@ -1866,20 +1952,6 @@ div.blndr_footer img
 /* begin LayoutCell, sidebar1 */
 .blndr_content-layout .blndr_sidebar1
 {
-   width: 250px;
-}
-.blndr_content-layout .blndr_sidebar1:before
-{
-   position: absolute;
-   z-index: -2;
-   direction: ltr;
-   right:   0;
-   bottom: 0;
-   top: 0;
-   content: ' ';
-   overflow: hidden;
-   display: block;
-   background-image: url('images/supportImages/sidebar_bg.png');
    width: 250px;
 }
 /* end LayoutCell, sidebar1 */
