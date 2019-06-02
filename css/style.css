@@ -215,12 +215,14 @@ ul.blndr_vmenu a
 .blndr_postcontent table td
 {
    text-align: center;
+   border: none;
 }
 
 
 .blndr_postcontent table img
 {
-   height: 150px;;
+   height: 150px;
+   border: solid #000000 5px;
 }
 
 
@@ -1480,7 +1482,7 @@ a img
 .blndr_article table, table.blndr_article
 {
    border-collapse: collapse;
-   margin: 1px;
+   margin: 25px;
 }
 
 .blndr_post .blndr_content-layout-br
