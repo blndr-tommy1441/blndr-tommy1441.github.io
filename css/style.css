@@ -423,8 +423,8 @@ div.blndr_header
    margin: 0 auto;
    position: relative;
    width:100%;
-   height: 260px;
-   margin-top: 2px;
+   height: 600px;
+   margin-top: 0px;
    margin-bottom: 0;
 }
 .blndr_header-position
@@ -456,10 +456,10 @@ div.blndr_header
    content:' ';
    top: 0;
    width:100%;
-   height: 260px;
-   background-image: url('../images/header.jpg');
+   height: 600px;
+   background-image: url('../images/header.png');
    background-repeat: no-repeat;
-   background-position: center left;
+   background-position: center right;
 }
 /* end Header */
 
@@ -615,7 +615,7 @@ ul.blndr_hmenu{
 /* end menu bar */
 .blndr_nav-outer{
    position: absolute;
-   width: 33%;
+   width: 31%;
    background-color: rgba(23, 22, 22, 0.65);
    border: none;
    margin-top: 10px;
@@ -798,14 +798,14 @@ div.blndr_textblock
    top: 0;
    left: 0;
    margin-left: 0;
-   width: 250px;
-   height: 260px;
+   width: 190px;
+   height: 600px;
    background-image: url('../images/textblock-bg.png');
 }
 /* end TextBlock */
 
 /* begin HeaderObject */
-div.blndr_headerobject
+/* div.blndr_headerobject
 {
    display: block;
    left: 75%;
@@ -815,7 +815,7 @@ div.blndr_headerobject
    width: 366px;
    height: 260px;
    background-image: url('../images/header-object.png');
-}
+} */
 /* end HeaderObject */
 
 /* begin Logo */
