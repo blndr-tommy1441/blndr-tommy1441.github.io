@@ -1821,3 +1821,20 @@ div.blndr_footer img
    height: 300px;
    border: solid #000000 5px;   
 }
+
+.blndr_postcontent .blndr_marketplace
+{
+   margin: 0;
+   padding: 0;
+}
+
+.blndr_postcontent .blndr_marketplace a
+{
+border: none;
+}
+
+.blndr_postcontent .blndr_marketplace img
+{
+   width: 350px;
+   border: gray solid 1px;
+}
