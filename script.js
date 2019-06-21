@@ -76,10 +76,6 @@ jQuery(function ($) {
 /* end Menu */
 
 /* begin MenuSubItem */
-jQuery(function () {
-    jQuery("ul.blndr_hmenu ul li").hover(function () { jQuery(this).prev().children("a").addClass("blndr_hmenu-before-hovered"); }, 
-        function () { jQuery(this).prev().children("a").removeClass("blndr_hmenu-before-hovered"); });
-});
 
 jQuery(function () {
     if (!jQuery.browser.msie) return;
@@ -110,7 +106,7 @@ jQuery(function () {
     });
 
     if (ieVersion > 6) return;
-    jQuery("ul.blndr_hmenu ul>li:first-child>a").css("border-top-width", "1px");
+    jQuery("ul.blndr_hmenu ul>li:first-child>a").css("border-top-width", "0px");
 });
 /* end MenuSubItem */
 
